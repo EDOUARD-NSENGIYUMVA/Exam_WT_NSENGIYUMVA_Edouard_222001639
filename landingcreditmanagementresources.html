@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creditmanagementresources</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>creditmanagementresources</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingcreditmanagementresources.php">
+      <label  for="ResourceName">ResourceName:</label><br>
+        <input type="text" id="ResourceName" name="ResourceName" required><br>
+        <label for="Description">Description:</label><br>
+        <input type="text" id="Description" name="Description" required><br>
+         <label  for="Link">Link:</label><br>
+        <input type="text" id="Link" name="Link" required><br>
+       <button type="submit" name="create">CREATE</button>
+        
+    </form>
+<h2>Update,delete and read of creditmanagementresources</h2>
+     <form method="post" action="landingcreditmanagementresources.php">
+      <input type="text" name="ResourceID" placeholder="ResourceID"><br>
+       <input type="text" name="newResourceName" placeholder="newResourceName"><br>
+                    <input type="text" name="newDescription" placeholder="NewDescription">
+                     <input type="text" name="NewLink" placeholder=" NewLink"><br>
+                   <button type="submit" name="update">UPDATE</button>
+                  <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+
+
+
+
+</body></html>

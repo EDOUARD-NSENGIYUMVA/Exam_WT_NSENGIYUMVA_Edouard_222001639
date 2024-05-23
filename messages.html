@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>messages</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<!----nsengiyumva edouard 222001639 on 16th May 2024--->
+<body>
+    <h1>messages</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="landingmessages.php">
+        <label for="MessageID">MessageID:</label><br>
+        <input type="text" id="MessageID" name="MessageID" required><br>
+        <label for="SenderID">SenderID:</label><br>
+        <input type="tel" id="SenderID" name="SenderID" required><br>
+         <label  for="ReceiverID">ReceiverID:</label><br>
+        <input type="text" id="ReceiverID" name="ReceiverID" required><br>
+        <label  for="MessageText">MessageText:</label><br>
+        <input type="text" id="MessageText" name="MessageText" required><br>
+        <label  for="SendDateTime">SendDateTime:</label><br>
+        <input type="text" id="SendDateTime" name="SendDateTimet" required><br>
+         <br>
+        <button type="submit" name="create">CREATE</button>
+    </form></body></html>

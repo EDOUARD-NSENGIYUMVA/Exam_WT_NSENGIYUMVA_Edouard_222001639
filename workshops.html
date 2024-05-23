@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Workshops</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form action="landingWorkshops.php" method="post">
+        <label for="WorkshopID">WorkshopID:</label><br>
+        <input type="text" id="WorkshopID" name="WorkshopID" required><br>
+        <label for="WorkshopName">WorkshopName:</label><br>
+        <input type="tel" id="WorkshopName" name="WorkshopName" required><br>
+         <label  for="DateTime">DateTime:</label><br>
+        <input type="text" id="DateTime" name="DateTime" required><br>
+         <label  for="InstructorID">InstructorID:</label><br>
+        <input type="text" id="InstructorID" name="InstructorID" required><br>
+       <label  for="MaxParticipants">MaxParticipants:</label><br>
+     <input type="text" id="MaxParticipants" name="MaxParticipants" required><br>
+      <br>
+        <input type="submit" value="Sign Up"><br>
+        
+    </form>
+</body>
+</html>

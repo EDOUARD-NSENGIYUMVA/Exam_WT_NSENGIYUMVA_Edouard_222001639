@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrations</title>
+</head>
+<!----Nsengiyumva Edouard 222001639 on 20th May 2024--->
+<body>
+    <h1>registrations</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="landingregistrations.php">
+         <label  for="UserID">UserID:</label><br>
+        <input type="text" id="UserID" name="UserID" required><br>
+        <label for="WorkshopID">WorkshopID:</label><br>
+        <input type="tel" id="WorkshopID" name="WorkshopID" required><br>
+         <label  for="PaymentStatus">PaymentStatus:</label><br>
+        <input type="text" id=" PaymentStatus" name="  PaymentStatus" required><br>
+       <label  for="PaymentMethod">PaymentMethod:</label><br>
+        <input type="text" id="PaymentMethod" name="PaymentMethod" required><br>
+         <br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!--  messagesList -->
+    <h2>registrations</h2>
+     <form method="post" action="landingregistrations.php">
+        <input type="number" name="RegistrationID" placeholder="NewRegistrationID">
+                    <input type="number" name="newUserID" placeholder="NewUserID">
+                    <input type="number" name="newWorkshopID" placeholder="NewWorkshopID">
+                    <input type="text" name="newPaymentStatus" placeholder="newPaymentStatus"> 
+                   <input type="text" name="newPaymentMethod" placeholder="NewPaymentMethod">  
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

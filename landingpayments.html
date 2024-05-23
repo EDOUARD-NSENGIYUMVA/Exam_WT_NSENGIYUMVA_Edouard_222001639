@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payments</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1> Payments</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form  Edouard-->
+    <h2>Create Record</h2>
+    <form method="post" action="landingPayments.php">
+        
+        <label for="UserID">UserID:</label>
+        <input type="number" id="UserID" name="UserID" required><br>
+        <label for="WorkshopID">WorkshopID:</label>
+        <input type="number" id="WorkshopID" name="WorkshopID" required><br>
+        <label for=" Amount"> Amount:</label>
+        <input type="text" id="Amount" name="Amount" required><br>
+
+         <label for="PaymentStatus">PaymentStatus:</label>
+        <input type="text" id="PaymentStatus" name="PaymentStatus" required><br>
+
+       <button type="submit" name="create">CREATE</button>
+    </form>
+
+
+
+
+
+ <form method="post" action="landingPayments.php">
+                    <input type="number" name="PaymentID" placeholder="New  PaymentID"><br>
+                    <input type="number" name="newUserID" placeholder="New UserID"><br>
+                    <input type="number" name="newWorkshopID" placeholder="WorkshopID"><br>
+                    <input type="text" name="newAmount" placeholder="NewAmount"><br>
+                     <input type="text" name="newPaymentStatus" placeholder="PaymentStatus"><br>
+                    <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+
+
+
+
+
+
+</body></html>

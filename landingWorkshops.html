@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops</title>
+</head>
+<!----nsengiyumva edouard222001639 on 16th may 2024--->
+<body>
+    <h1> Workshops</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingWorkshops.php">
+        
+        <label for=" WorkshopID"> WorkshopID:</label>
+        <input type="number" id=" WorkshopID" name=" WorkshopID" required><br>
+        <label for="WorkshopName">WorkshopName:</label>
+        <input type="text" id="WorkshopName" name="WorkshopName" required><br>
+        <label for="DateTime">DateTime:</label>
+        <input type="DateTime" id="DateTime" name="DateTime" required><br>
+        <label for="InstructorID">InstructorID:</label>
+        <input type="number" id="InstructorID" name="InstructorID" required><br>
+         <label for="MaxParticipants">MaxParticipants:</label>
+        <input type="text" id="MaxParticipants" name="MaxParticipants" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Workshops</h2>
+     <form method="post" action="landingWorkshops.php">
+                    <input type="number" name="WorkshopID" placeholder=" NewWorkshopID"><br>
+                    <input type="number" name="newWorkshopID" placeholder="NewWorkshopID"><br>
+                    <input type="text" name="newWorkshopName" placeholder="NewWorkshopName "><br>
+                    <input type="text" name="newDateTime" placeholder="DateTime"><br>
+                    <input type="number" name="newInstructorID" placeholder="NewInstructorID"><br>
+                     <input type="text" name="newMaxParticipants" placeholder="NewMaxParticipants"><br>
+                  <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Users</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form action="signup.php" method="post">
+        <label for="Username">Username:</label><br>
+        <input type="text" id="Username" name="Username" required><br>
+         <label  for="Email">Email:</label><br>
+        <input type="Email" id="Email" name="Email" required><br>
+         <label  for="Password">Password:</label><br>
+        <input type="Password" id="Password" name="Password" required><br>
+       <label  for="RegistrationDate">RegistrationDate:</label><br>
+     <input type="date" id="RegistrationDate" name="RegistrationDate" required><br>
+      <br>
+        <input type="submit" value="Sign Up"><br>
+        
+    </form>
+</body>
+</html>

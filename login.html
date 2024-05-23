@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!------------Nsengiyumva ed----20th May 2024---->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="full-screen-container">
+        <div class="login-container">
+            <h1 class="login-title">Welcome</h1>
+            <form action="login.php" class="form" method="POST" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="username" id="username" name="username" placeholder="Enter your username" required>
+                    <span id="usernameError" class="error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="password" id="password" name="password" placeholder="Enter your password" required>
+                    <span id="passwordError" class="error"></span>
+                </div>
+
+                <button type="submit" class="login-button">Login</button>
+                <div class="sing-up-word"><a href="signup.html">Create account</a></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

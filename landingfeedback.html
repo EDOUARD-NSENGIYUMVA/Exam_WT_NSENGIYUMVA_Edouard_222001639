@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> feedback</title>
+</head>
+<!----nsengiyumva edouard222001639 on 16th may 2024--->
+<body>
+    <h1> feedback</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingfeedback.php">
+        
+        <label for=" UserID"> UserID:</label>
+        <input type="text" id=" UserID" name=" UserID" required><br>
+        <label for="WorkshopID">WorkshopID:</label>
+        <input type="number" id="WorkshopID" name="WorkshopID" required><br>
+        <label for="Rating">Rating:</label>
+        <input type="text" id="Rating" name="Rating" required><br>
+        <label for="Comments">Comments:</label>
+        <input type="text" id="Comments" name="Comments" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>feedback</h2>
+     <form method="post" action="landingfeedback.php">
+                    <input type="number" name="FeedbackID" placeholder=" NewFeedbackID"><br>
+                    <input type="text" name="newUserID" placeholder="New UserID"><br>
+                    <input type="number" name="newWorkshopID" placeholder="New WorkshopID"><br>
+                    <input type="text" name="newRating" placeholder="Rating"><br>
+                    <input type="text" name="newComments" placeholder="New Comments"><br>
+                  <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+</body>
+</html>

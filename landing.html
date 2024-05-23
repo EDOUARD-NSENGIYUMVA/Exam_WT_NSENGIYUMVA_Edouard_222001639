@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin </title>
+</head>
+<body>
+    <!----Nsengiyumva Edouard 222001639 on 16th april 2024--->
+    <h1>Admin r</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landing.php">
+        <label for="user_id">User_id:</label>
+        <input type="number" id="user_id" name="user_id"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="username">Username:</label>
+        <input type="text" id="lastname" name="username" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Admin </h2>
+     <form method="post" action="landing.php">
+                    <input type="number" name="user_id" placeholder=" New user_id">
+                    <input type="text" name="newusername" placeholder="New Email">
+                    <input type="email" name="newemail" placeholder="New Username">
+                    <input type="password" name="newpassword" placeholder="New password">
+                    <input type="text" name="newContact" placeholder="New Contact Number">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

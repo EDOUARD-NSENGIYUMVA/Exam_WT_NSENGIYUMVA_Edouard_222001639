@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendees</title>
+</head>
+<!----Nsengiyumva Edouard 222001639 on 16th april 2024--->
+<body>
+    <h1>Admin User</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="landingattendees.php">
+        
+        <label for="UserID">UserID:</label><br>
+        <input type="tel" id="UserID" name="UserID" required><br>
+         <label  for="WorkshopID">WorkshopID:</label><br>
+        <input type="text" id="WorkshopID" name="WorkshopID" required><br>
+        <label  for="RegistrationDate">RegistrationDate:</label><br>
+        <input type="date" id="RegistrationDate" name="RegistrationDate" required><br>
+         <br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>attendees </h2>
+     <form method="post" action="landingattendees.php">
+                    <input type="text" name="AttendeeID" placeholder="NewAttendeeID">
+                    <input type="text" name="newUserID" placeholder="NewUserID">
+                    <input type="text" name="newWorkshopID" placeholder="New WorkshopID">
+                    <input type="date" name="newRegistrationDate" placeholder="New RegistrationDate">    
+
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

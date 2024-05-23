@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<!----nsengiyumva edouard222001639 on 16th may 2024--->
+<body>
+    <h1>Users</h1>
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingUsers.php">
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" name="Username" required><br>
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email" required><br>
+        <label for="Password">Password:</label>
+        <input type="text" id="Password" name="Password" required><br>
+       <label for="RegistrationDate">RegistrationDate:</label>
+        <input type="date" id="RegistrationDate" name="RegistrationDate" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>user</h2>
+     <form method="post" action="landingusers.php">
+                    <input type="number" name="UserID" placeholder="New UserID"><br>
+                    <input type="text" name="newUsername" placeholder="NewUsername"><br>
+                    <input type="Email" name="newEmail" placeholder="newEmail"><br>
+                    <input type="Password" name="newPassword" placeholder="NewPassword"><br>
+                    <input type="date" name="newRegistrationDate" placeholder=" NewRegistrationDate"><br>
+                  <button type="submit" name="update">UPDATE</button>
+                    <button type="submit" name="delete">DELETE</button>
+                    <button type="submit" name="read">READ</button>
+                </form>
+</body>
+</html>
